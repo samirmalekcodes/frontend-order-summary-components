@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable jsx-a11y/alt-text */
+import Cards from "./Components/Card";
+import wave1 from "./images/pattern-background-desktop.svg";
+import Wave2 from "./images/pattern-background-mobile.svg";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-blue-100 relative h-screen flex justify-center items-center  ">
+      <img src={wave1} className="absolute top-0 left-0 right-0 w-screen" />
+      <Cards />
     </div>
   );
 }
